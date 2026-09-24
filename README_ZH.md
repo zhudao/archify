@@ -39,6 +39,8 @@
   <a href="https://x.com/t20000622yy"><img src="https://img.shields.io/badge/Creator_on_X-181717?style=for-the-badge&amp;logo=x&amp;logoColor=white" alt="Follow the creator on X" /></a>
 </p>
 
+<p align="center"><a href="#sponsors"><strong>❤️ 合作与赞助伙伴：Kimi Work · Supercode · EverMind/Raven</strong></a></p>
+
 ## 看看 Archify 能做什么
 
 <p align="center">
@@ -72,7 +74,15 @@ API 优先读取 Redis，缓存未命中时查询 PostgreSQL 并回填缓存。
 
 [按 Agent 选择安装方式](https://tt-a1i.github.io/archify/start.html?agent=cursor&type=architecture) · [安装细节与更新检查](#快速开始)
 
+<a id="sponsors"></a>
+
 ## ❤️ 赞助伙伴
+
+<p align="center">
+  <a href="https://www.kimi.com/?aff=archify"><img src="docs/assets/sponsors/archify-kimi-work.png" alt="Archify × Kimi Work 合作海报" width="800" /></a>
+</p>
+
+**Archify × Kimi Work。** 在 Kimi Work 插件商店搜索 **「可交互架构图」**，用一句话描述你的系统，即可生成可交互的图。**[在 Kimi Work 中使用 →](https://www.kimi.com/?aff=archify)**
 
 <table>
 <tr>
@@ -189,7 +199,7 @@ npx -y skills add tt-a1i/archify --skill archify --agent cursor --global --copy 
 npx skills use tt-a1i/archify@archify --agent codex
 ```
 
-DeepSeek Harness（社区集成、显式启用）：运行 `dsh plugin --profile web add @tt-a1i/archify-dsh@0.1.0`；参见[兼容范围、限制与安全说明](integrations/deepseek-harness/README.md)。[Agent 切换器](https://tt-a1i.github.io/archify/start.html?agent=cursor&type=architecture)只为 `cursor`、`codex`、`claude-code` 和 `opencode` 生成命令。Raven 仅支持 ZIP 手动安装：将 [`archify.zip`](archify.zip) 解压到 `~/.raven/workspace/skills`，解压后会得到 `~/.raven/workspace/skills/archify`；Raven 不属于切换器目标。
+DeepSeek Harness（社区集成、显式启用）：运行 `dsh plugin --profile web add @tt-a1i/archify-dsh@0.1.0`；参见[兼容范围、限制与安全说明](integrations/deepseek-harness/README.md)。[Agent 切换器](https://tt-a1i.github.io/archify/start.html?agent=cursor&type=architecture)只为 `cursor`、`codex`、`claude-code` 和 `opencode` 生成命令。
 
 安装后的 Skill 包含一个低频、失败静默的发布检查，它最多只显示可选更新提醒，绝不会自行下载或安装更新。一次成功检查后，下次网络请求通常约在 72 小时（±20%）后发出；检查失败后，活跃使用可能在首次 6 小时、后续 24 小时退避到期时重试。请求只访问 `https://tt-a1i.github.io/archify/skill-updates/archify/stable.json`。服务端会自然获得 IP、请求时间和常规 HTTP 元数据；检查器不会发送本地版本、Agent、项目数据、用户输入、账户/设备标识，也不会保存或回传 ETag。是否更新以及何时更新始终由你决定。如需完全关闭检查（包括网络请求和提醒状态写入），请在 Agent 环境中设置 `ARCHIFY_UPDATE_CHECK_DISABLED=1`。
 
@@ -360,7 +370,6 @@ node bin/archify.mjs deliver workflow examples/agent-tool-call.workflow.json /tm
 
 | 使用位置 | 安装位置或方法 | 能力 |
 |---|---|---|
-| **Raven** | ZIP 手动安装：将 `archify.zip` 解压到 `~/.raven/workspace/skills`，解压后会得到 `~/.raven/workspace/skills/archify` | 完整 Renderer + Validation 工作流 |
 | **Claude Code** | `~/.claude/skills/` 或 `.claude/skills/` | 完整 Renderer + Validation 工作流 |
 | **Codex CLI** | `~/.agents/skills/` 或 `.agents/skills/` | 完整 Renderer + Validation 工作流 |
 | **opencode** | `~/.config/opencode/skills/`、`.opencode/skills/` 或 `.agents/skills/` | 完整 Renderer + Validation 工作流 |
