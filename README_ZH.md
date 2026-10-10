@@ -8,6 +8,8 @@
 
 <p align="center"><img src="docs/assets/archify-readme-hero.png" alt="Archify — interactive diagrams" width="960" /></p>
 
+<p align="center"><strong>官方入口：</strong> <a href="https://archify.si">archify.si</a> · <a href="https://github.com/tt-a1i/archify">GitHub</a><br/>Archify 开源免费。第三方提供的在线服务、收费套餐由其运营方负责，不代表 Archify 官方。 <a href="#official-services">查看详细说明 →</a></p>
+
 <p align="center">从一个想法、一个问题或一份计划开始。把它描述给 AI Agent，Archify 就能生成可以探索、修改和分享的交互式 HTML。从旅行行程、知识地图到复杂系统，你都可以继续扩展，做成自己需要的样子。</p>
 
 <p align="center">看看社区正在创造什么，也想想你还能用它做些什么。</p>
@@ -92,6 +94,10 @@ API 优先读取 Redis，缓存未命中时查询 PostgreSQL 并回填缓存。
 <tr>
 <td align="center" width="240"><a href="https://www.openlux.ai/register?channel=c_qdvanbpc"><img src="docs/assets/sponsors/openlux-logo.png" alt="OpenLux" width="200" /></a><br/><strong><a href="https://www.openlux.ai/register?channel=c_qdvanbpc">OpenLux</a></strong></td>
 <td>感谢 OpenLux 对本项目的赞助！OpenLux 是一个面向企业的一站式 AI 聚合平台，汇集全球各大厂商主流大模型，平台提供高效、稳定的服务与及时的技术支持。Claude、OpenAI、Gemini 系列模型基准折扣分别低至官方的 0.882 折、0.4 折和 0.8 折。<br/><br/>Archify 用户还可享受专属福利：通过专属链接注册，充值最高可享 7.5% 优惠！<br/><br/><a href="https://www.openlux.ai/register?channel=c_qdvanbpc">立即体验 →</a></td>
+</tr>
+<tr>
+<td align="center" width="240"><a href="https://zturbo.top"><img src="docs/assets/sponsors/zturbo-logo.png" alt="ZTURBO" width="200" /></a><br/><strong><a href="https://zturbo.top">ZTURBO</a></strong></td>
+<td>ZTURBO 提供高速、稳定的网络连接体验，采用新一代加密技术，支持 Windows、macOS、iOS 和 Android 多平台客户端，轻松连接不同设备。<br/><br/>据 ZTURBO 介绍：全球 50M+ 用户 · 2000+ 服务器节点 · 99.9% 在线率。<br/><br/><a href="https://zturbo.top">访问 ZTURBO 官网 →</a></td>
 </tr>
 <tr><td align="center" width="240"><a href="https://github.com/EverMind-AI/Raven"><img src="docs/assets/sponsors/evermind-archify-raven.png" alt="Archify × Raven" width="200" /></a><br/><strong><a href="https://github.com/EverMind-AI">EverMind</a> · <a href="https://github.com/EverMind-AI/Raven">Raven</a></strong></td><td>感谢 EverMind 赞助 Archify。EverMind 专注 Agent 记忆基础设施，旗下 <a href="https://github.com/EverMind-AI/Raven"><strong>Raven</strong></a> 已支持 Archify Skill，让 Raven 工作流可以直接生成经过验证的交互式系统地图。</td></tr>
 </table>
@@ -415,6 +421,14 @@ node bin/archify.mjs deliver workflow examples/agent-tool-call.workflow.json /tm
   <td align="center"><strong><img src="docs/assets/community/qq.svg" alt="" width="18" /> QQ 群</strong><br/><img src="docs/assets/community/qq-qr.png" alt="Archify Official QQ 群二维码" width="300" height="300" /></td>
 </tr>
 </table>
+
+<a id="official-services"></a>
+
+## 官方入口与第三方服务
+
+- **开源项目：** 源码和安装包可按 [MIT 协议](LICENSE)免费使用。
+- **官方网站：** [archify.si](https://archify.si) 目前提供项目介绍、示例和安装指引。
+- **第三方服务：** 是否收费、如何处理数据、提供什么支持，由第三方运营方决定。名称或域名相似不代表官方合作。
 
 ## License
 
